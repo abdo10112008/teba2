@@ -1122,3 +1122,54 @@ img:hover, video:hover {
 
 
 
+/* ==== Footer توقيع المطور ==== */
+.footer-dev {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  box-shadow: 0 -5px 20px rgba(255, 215, 0, 0.3);
+  border-top: 2px solid #ffd700;
+}
+
+.footer-dev .dev-name {
+  color: #ffd700;
+  font-weight: bold;
+  text-shadow: 0 0 8px #fff176, 0 0 12px #fdd835;
+  animation: flicker 2s infinite alternate;
+}
+
+.footer-dev .getsite {
+  margin: 10px 0 15px;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.footer-dev .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 22px;
+}
+
+.footer-dev .social-icons a {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-dev .social-icons a:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+/* إضاءة الاسم */
+@keyframes flicker {
+  0% {
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffea00;
+  }
+  100% {
+    text-shadow: 0 0 12px #fdd835, 0 0 20px #fff176;
+  }
+}
