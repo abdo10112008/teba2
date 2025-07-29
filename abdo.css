@@ -356,7 +356,7 @@
 
 /* سكشن الطلبات بخلفية كاملة وجميلة */
 .requirements-section {
-  background-image: url('talab.jpg');
+  background: url("https://i.ibb.co/Nns0XF97/talab.jpg") no-repeat center center;
   background-size: cover;
  background-repeat: no-repeat;
   background-position:  center;
@@ -594,7 +594,7 @@
 
 /* ===== قسم العمالة المتخصصة ===== */
 .workforce-section {
-   background: url("https://i.ibb.co/Nns0XF97/talab.jpg") no-repeat center center;
+    background: url("https://i.ibb.co/PvfLKxdS/pexels-james-frid-81279-901941.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   padding: 100px 20px;
