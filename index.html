@@ -49,6 +49,96 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+<!-- From Uiverse.io by andrew-manzyk --> 
+<div class="loader">
+  <svg width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+      <mask id="clipping">
+        <polygon points="0,0 100,0 100,100 0,100" fill="black"></polygon>
+        <polygon points="25,25 75,25 50,75" fill="white"></polygon>
+        <polygon points="50,25 75,75 25,75" fill="white"></polygon>
+        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+        <polygon points="35,35 65,35 50,65" fill="white"></polygon>
+      </mask>
+    </defs>
+  </svg>
+  <div class="box"></div>
+</div>
+
+
+
+
+
+
+<section class="apply-section" id="apply">
+
+  <h2>قدّم بياناتك لضمان التواصل</h2>
+  <p class="apply-sub">
+     جاهز تشتغل في تركيا؟
+<br>     
+
+املأ البيانات وسيب الباقي علينا ✈️
+متابعة كاملة + فرص مضمونه + دعم مستمر.
+
+ابدأ دلوقتي 
+<br>
+
+👇</p>
+
+  <div class="apply-form">
+
+    <input type="text" id="name" placeholder="الاسم بالكامل">
+    <input type="number" id="age" placeholder="السن">    
+    <input type="tel" id="phone" placeholder="رقم الموبايل">
+
+    <button onclick="sendWhats()">إرسال الطلب</button>
+
+  </div>
+
+</section>
+
+<script>
+function sendWhats(){
+
+let name = document.getElementById("name").value;
+let age = document.getElementById("age").value;
+let phone = document.getElementById("phone").value;
+
+if(name=="" || age=="" || phone==""){
+alert("من فضلك املأ كل البيانات");
+return;
+}
+
+let message =
+`طلب تقديم جديد:%0A
+الاسم: ${name}%0A
+السن: ${age}%0A
+رقم الموبايل: ${phone}`;
+
+window.open("https://wa.me/201092405310?text="+message , "_blank");
+}
+</script>
+
+
+
+
+
+  
+
+
+
 <!-- From Uiverse.io by jeremyssocial --> 
 <div class="terminal-loader">
   <div class="terminal-header">
@@ -809,6 +899,7 @@
 
  </body>
  </html>
+
 
 
 
